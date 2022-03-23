@@ -99,7 +99,7 @@ input:focus {
     justify-content: center;
     flex-direction: column;
     height: 46.875rem;
-    background: url(/img/flag.png);
+    background: url(img/flag.png);
     background-size: cover;
 }
 
