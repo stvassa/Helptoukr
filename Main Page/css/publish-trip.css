@@ -1,0 +1,41 @@
+.header-btn-group {
+    background: #0057b8;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.header-btn-group img {
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+}
+
+.header-btn-group:last-child img {
+    margin-top: 20px;
+}
+
+.publish-trip {
+    display: flex;
+    height: 46.875rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publish-trip-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.publish-trip .nav-btns {
+    background: #E5E5E5;
+    border: none;
+    outline: none;
+    color: #0057b8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
