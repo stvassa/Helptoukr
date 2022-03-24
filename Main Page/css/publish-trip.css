@@ -1,3 +1,13 @@
+span {
+    font-family: 'Proba Pro';
+    font-weight: 400;
+    color: #0057b8;
+}
+
+body {
+    background: rgb(242,247,251);
+}
+
 .header-btn-group {
     background: #0057b8;
     border-radius: 3px;
@@ -27,15 +37,80 @@
 .publish-trip-header {
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 
 .publish-trip .nav-btns {
-    background: #E5E5E5;
+    background: rgb(223,235,250);
     border: none;
     outline: none;
     color: #0057b8;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    font-size: 18px;
+    width: 134px;
+    height: 41px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.publish-trip .rotate {
+    transform: rotate(180deg);
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+
+.progress-icon {
+    z-index: 5;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+.progress-icon span {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.active-progress-icon span {
+    color: #000;
+}
+
+.stepper svg {
+    z-index: 5;
+}
+
+.stepper .progress {
+    position: absolute;
+    border: 1px dashed rgba(0, 87, 184, 0.5);
+    display: block;
+    width: 65%;
+    height: 0;
+}
+
+.form-container {
+    padding-top: 50px;
+}
+
+.first-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-step > svg {
+    margin-left: 18px;
+    margin-right: 10px;
 }
