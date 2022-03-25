@@ -61,7 +61,7 @@ img {
 
 input {
     color: var(--black);
-    font-size: var(--font-18px) ;
+    font-size: var(--font-18px);
     border: 0;
     background: none;
     font-family: 'Proba Pro', sans-serif;
@@ -75,6 +75,15 @@ input:focus {
     outline: none;
 }
 
+.container-fluid {
+    padding: 0 20px;
+}
+
+.wrapper-nav {
+    justify-content: space-between;
+    width: 100%;
+}
+
 .header__logo {
     font-style: normal;
     font-weight: bold;
@@ -82,6 +91,12 @@ input:focus {
     color: #FFFFFF;
     text-shadow: var(--tshadow);
     text-transform: uppercase;
+}
+
+.hrader-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 }
 
 .header__number {
@@ -96,21 +111,31 @@ input:focus {
 
 .intro {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     height: 46.875rem;
-    background: url(img/flag.png);
+    background: url(../img/flag.png);
     background-size: cover;
+    z-index: -1;
+}
+
+.intro::after {
+    content: url(../img/emblem.svg);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    z-index: 1;
 }
 
 .title__header {
-    font-size: 4.125rem;
+    font-size: 4.583vw;
     font-weight: bold;
     text-shadow: var(--tshadow);
 }
 
 .title__content {
-    font-size: 1.5rem;
+    font-size: 2.778vw;
     font-weight: medium;
     text-shadow: var(--tshadow);
 }
@@ -133,7 +158,7 @@ input:focus {
 }
 
 .form {
-    border: 1px solid rgba(0, 87, 184, 1)!important;
+    border: 1px solid rgba(0, 87, 184, 1) !important;
     display: flex;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -169,6 +194,12 @@ input:focus {
     font-weight: bold;
 }
 
+.btn-inherit {
+    background-color: transparent;
+    border-radius: none;
+    padding: 10px;
+}
+
 .style_h1 {
     font-size: 3.25rem;
     font-weight: bold;
@@ -201,4 +232,62 @@ input:focus {
 
 .bg_blue {
     background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
+}
+
+.ico {
+    width: 20px;
+    height: 60px;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer::after {
+    content: url(../img/emblem.svg);
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 50%;
+    z-index: 1;
+}
+
+
+@media (max-width: 769px) {
+    .hrader-contacts {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .hrader-contacts {
+        text-align: end;
+        flex-basis: content;
+    }
+
+    .wrapper-nav {
+        justify-content: start;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container-fluid {
+        padding: 0 100px;
+    }
+
+    .hrader-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .intro::after {
+        top: 5%;
+    }
 }
