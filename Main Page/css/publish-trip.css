@@ -115,10 +115,23 @@ body {
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .publish-trip {
+        height: 53.875rem;
+    }
+    
     .publish-trip-form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 3px 0px;
+    }
+
+    .publish-trip-form .first-step {
+        margin: 10px 0px;
+    }
+    
+    .publish-trip-header {
+        
     }
 }
