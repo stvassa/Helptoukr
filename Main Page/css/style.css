@@ -275,6 +275,7 @@ input:focus {
     height: 35px;
     padding: 5px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .dot {
