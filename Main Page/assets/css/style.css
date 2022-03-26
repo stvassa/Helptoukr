@@ -261,6 +261,9 @@ input:focus {
 
     }
 
+    .card-body {
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
@@ -272,6 +275,10 @@ input:focus {
     .wrapper-nav {
         justify-content: start;
         width: 50%;
+    }
+
+    .card-body {
+        text-align: start;
     }
 }
 
