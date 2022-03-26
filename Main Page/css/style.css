@@ -254,6 +254,19 @@ input:focus {
 
 /* DETAILS OF TRAVEL */
 
+.content__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg__body {
+    background-color:var(--bg-main)
+}
+
+.bg_blue {
+    background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
+}
+
 .nav__item_bg {
     background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(4px);
@@ -266,6 +279,46 @@ input:focus {
 
 .dot {
     padding: 15px 8px;
+}
+
+.box__back {
+    background: rgba(35, 116, 240, 0.09);
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__back p {
+    font-size: 1.125rem;
+    color: rgba(0, 87, 184, 1);
+}
+
+.container__min {
+    max-width: 34.875rem;
+    margin: 0 auto;
+}
+
+.box_time {
+    display: flex;
+}
+
+.box_time time {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.box_gray {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.box_details {
+    font-weight: 400;
+    font-size: 1.375rem;
 }
 
 
