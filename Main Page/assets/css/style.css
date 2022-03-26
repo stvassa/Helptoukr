@@ -123,9 +123,10 @@ input:focus {
 .intro::after {
     content: url(../img/emblem.svg);
     position: absolute;
-    top: 25%;
+    top: 2%;
     left: 50%;
-    z-index: 1;
+    opacity: 0;
+
 }
 
 .title__header {
@@ -267,9 +268,14 @@ input:focus {
 
 }
 
-@media (min-width: 420px) {
+@media (min-width: 360px) {
     .intro::after {
+        content: url(../img/emblem.svg);
+        position: absolute;
         top: 2%;
+        left: 50%;
+        z-index: 1;
+        opacity: 1;
     }
 
     .style_h1 {
