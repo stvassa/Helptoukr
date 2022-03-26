@@ -42,6 +42,20 @@ img {
     text-transform: uppercase;
 }
 
+:root {
+    --tshadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    --blue: #0057B8;
+    --bg-main: rgba(0, 87, 184, 0.05);
+}
+
+.btn {
+    background-color: var(--blue);
+    border-radius: 5px;
+    font-size: 1.375rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
 /* DETAILS OF TRAVEL */
 
 .content__line {
