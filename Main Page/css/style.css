@@ -252,6 +252,8 @@ input:focus {
     z-index: 1;
 }
 
+/* DETAILS OF TRAVEL */
+
 .nav__item_bg {
     background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(4px);
