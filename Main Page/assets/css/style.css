@@ -87,7 +87,7 @@ input:focus {
 .header__logo {
     font-style: normal;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #FFFFFF;
     text-shadow: var(--tshadow);
     text-transform: uppercase;
@@ -123,19 +123,19 @@ input:focus {
 .intro::after {
     content: url(../img/emblem.svg);
     position: absolute;
-    top: 2%;
+    top: 25%;
     left: 50%;
     z-index: 1;
 }
 
 .title__header {
-    font-size: 4.583vw;
+    font-size: 9vw;
     font-weight: bold;
     text-shadow: var(--tshadow);
 }
 
 .title__content {
-    font-size: 2.778vw;
+    font-size: 5vw;
     font-weight: medium;
     text-shadow: var(--tshadow);
 }
@@ -201,7 +201,7 @@ input:focus {
 }
 
 .style_h1 {
-    font-size: 3.25rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -264,12 +264,34 @@ input:focus {
     .card-body {
         text-align: center;
     }
+
+}
+
+@media (min-width: 420px) {
+    .intro::after {
+        top: 2%;
+    }
+
+    .style_h1 {
+        font-size: 3.25rem;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 768px) {
+
     .hrader-contacts {
         text-align: end;
         flex-basis: content;
+    }
+
+    .title__header {
+        font-size: 4.158vw;
+
+    }
+
+    .title__content {
+        font-size: 2.436vw;
     }
 
     .wrapper-nav {
