@@ -139,6 +139,7 @@ input:focus {
     background-color: #FFFFFF;
     margin-right: 1rem;
     width: 100%;
+    height: 68px;
 }
 
 .form:last-child {
@@ -201,4 +202,49 @@ input:focus {
 
 .bg_blue {
     background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
+}
+
+/*todo rename .puslih-trip class to container*/
+.publish-trip {
+    display: flex;
+    height: 46.875rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publish-trip-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+
+.publish-trip-header .nav-btns {
+    background: rgb(223,235,250);
+    border: none;
+    outline: none;
+    color: #0057b8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 134px;
+    height: 41px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.publish-trip-header .rotate {
+    transform: rotate(180deg);
+}
+
+.trip-header {
+    margin-top: -131px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .trip-header {
+        margin-top: 0px;
+    }
 }

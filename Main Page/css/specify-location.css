@@ -1,0 +1,8 @@
+.specify-location-map {
+    height: 600px;
+    border: 1px solid #000;
+}
+
+.specify-location-btn, .specify-location-btn button {
+    height: 68px;
+}
