@@ -56,6 +56,11 @@ img {
     font-weight: bold;
 }
 
+.style_h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+
 /* DETAILS OF TRAVEL */
 
 .content__line {
