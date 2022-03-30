@@ -8,6 +8,9 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/specify-location.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
     <title>HELPTOUKR</title>
 </head>
 <body>
@@ -59,23 +62,25 @@
     </div>
 
     <div class="col-10 form-container container">
-        <div class="d-flex mb-4 justify-content-center input-place">
-            <div class="form">
+        <div class="d-flex mb-4 justify-content-center input-place autocomplete-container">
+            <div class="form form-autosuggest">
                 <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-left">
                     <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
                 </svg>
-                <input type="text" class="inp" placeholder="Звідки?">
+                <input type="text" list="datalistOptions" class="inp" placeholder="Звідки?">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
             </div>
+
             <div class="specify-location-btn">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary continue-btn" type="button">
                    <span>Продовжити</span>
                 </button>
             </div>
         </div>
 
-        <div class="d-grid specify-location-map">
-          sfdfs
-        </div>
+        <div id="map" class="d-grid specify-location-map"></div>
     </div>
 </div>
 
@@ -97,6 +102,19 @@
         </footer>
     </div>
 </div>
-
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([50.50, 30.57], 10);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidGhlb25laGVkZ2Vob2ciLCJhIjoiY2wxZTNwejljMGp3ZDNjbWY4a2d4OW4xYiJ9.p0K2dIQxk4u0LrXkFNBh8g', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoidGhlb25laGVkZ2Vob2ciLCJhIjoiY2wxZTNwejljMGp3ZDNjbWY4a2d4OW4xYiJ9.p0K2dIQxk4u0LrXkFNBh8g'
+    }).addTo(map);
+</script>
 </body>
 </html>
