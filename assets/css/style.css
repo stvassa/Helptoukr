@@ -1,8 +1,8 @@
 @font-face {
     font-family: ProbaPro;
-    src: url(../fonts/ProbaPro-Bold.otf);
-    src: url(../fonts/ProbaPro-Medium.otf);
-    src: url(../fonts/ProbaPro-Regular.otf);
+    src: url(assets/fonts/ProbaPro-Bold.otf);
+    src: url(assets/fonts/ProbaPro-Medium.otf);
+    src: url(assets/fonts/ProbaPro-Regular.otf);
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     font-size: 16px;
 }
 
+<<<<<<< HEAD:assets/css/style.css
 .my {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -28,6 +29,8 @@ button {
     padding: 0;
 }
 
+=======
+>>>>>>> b3ead98698dfe111b6b12dd562c20562a3571f5b:Main Page/assets/css/style.css
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -51,6 +54,7 @@ img {
     display: block;
 }
 
+<<<<<<< HEAD:assets/css/style.css
 input {
     color: var(--black);
     font-size: var(--font-18px);
@@ -77,6 +81,8 @@ input:focus {
 
 
 
+=======
+>>>>>>> b3ead98698dfe111b6b12dd562c20562a3571f5b:Main Page/assets/css/style.css
 .header__logo {
     font-style: normal;
     font-weight: bold;
@@ -86,6 +92,7 @@ input:focus {
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD:assets/css/style.css
 .btn-icon{
     display: flex;
     width: 40px;
@@ -97,73 +104,21 @@ input:focus {
     border-radius: 3px;
     align-items: center;
     justify-content: center;
+=======
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+>>>>>>> b3ead98698dfe111b6b12dd562c20562a3571f5b:Main Page/assets/css/style.css
 }
 
-.intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 46.875rem;
-    background: url(../img/flag.png);
-    background-size: cover;
-}
-
-.title__header {
-    font-size: 4.125rem;
-    font-weight: bold;
-    text-shadow: var(--tshadow);
-}
-
-.title__content {
-    font-size: 1.5rem;
-    font-weight: medium;
-    text-shadow: var(--tshadow);
-}
-
-.main__content {
-    background: rgba(0, 87, 184, 0.05);
-}
-
-.mbb {
-    border-bottom: 1px solid rgba(46, 44, 44, 0.1);
-}
-
-.box {
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.box_btm {
-    padding-bottom: 80px;
-}
-
-.form {
-    border: 1px solid rgba(0, 87, 184, 1) !important;
-    display: flex;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    margin-right: 1rem;
-    width: 100%;
-}
-
-.form:last-child {
-    margin-right: 0;
-}
-
-.mb {
-    padding-bottom: 90px;
-}
-
-.inp {
-    max-width: 362px;
-    height: 60px;
-    width: 100%;
-    font-size: 1.125rem;
-}
-
-.input__control {
-    max-width: 362px;
-    height: 60px;
+:root {
+    --tshadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    --blue: #0057B8;
+    --bg-main: rgba(0, 87, 184, 0.05);
 }
 
 .btn {
@@ -179,31 +134,91 @@ input:focus {
     font-weight: bold;
 }
 
-.card-body {
-    font-size: 1.375rem;
+/* DETAILS OF TRAVEL */
+
+<<<<<<< HEAD:assets/css/style.css
+.form {
+    border: 1px solid rgba(0, 87, 184, 1) !important;
+=======
+.content__line {
+>>>>>>> b3ead98698dfe111b6b12dd562c20562a3571f5b:Main Page/assets/css/style.css
+    display: flex;
+    justify-content: space-between;
 }
 
-.img_arrow {
-    display: inline;
-}
-
-.fifty {
-    width: 50%;
-}
-
-.ms {
-    margin-left: 7.375rem;
-}
-
-.fal {
-    font-size: 1.375rem;
-    line-height: 1.5rem;
-}
-
-.style_form {
-    font-size: 1.8rem;
+.bg__body {
+    background:var(--bg-main)
 }
 
 .bg_blue {
     background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
 }
+
+.nav__item_bg {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dot {
+    padding: 15px 8px;
+}
+
+.box__back {
+    background: rgba(35, 116, 240, 0.09);
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__back p {
+    font-size: 1.125rem;
+    color: rgba(0, 87, 184, 1);
+}
+
+.container__min {
+    max-width: 34.875rem;
+    margin: 0 auto;
+}
+
+
+.box_time {
+    display: flex;
+}
+
+.box_time time {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.box_gray {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.box_details {
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+<<<<<<< HEAD:assets/css/style.css
+.bg_blue {
+    background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
+}
+=======
+.travel__img {
+    background: rgba(0, 87, 184, 0.05);
+    border-radius: 17px;
+    width: 69.74px;
+    height: 67px;
+}
+>>>>>>> b3ead98698dfe111b6b12dd562c20562a3571f5b:Main Page/assets/css/style.css
