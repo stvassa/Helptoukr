@@ -10,14 +10,6 @@ body {
     font-size: 16px;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-}
-
 .my {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -61,7 +53,7 @@ img {
 
 input {
     color: var(--black);
-    font-size: var(--font-18px) ;
+    font-size: var(--font-18px);
     border: 0;
     background: none;
     font-family: 'Proba Pro', sans-serif;
@@ -75,6 +67,16 @@ input:focus {
     outline: none;
 }
 
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
 .header__logo {
     font-style: normal;
     font-weight: bold;
@@ -84,14 +86,17 @@ input:focus {
     text-transform: uppercase;
 }
 
-.header__number {
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-shadow: var(--tshadow);
-}
-
-.header__mail {
-    text-shadow: var(--tshadow);
+.btn-icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro {
@@ -133,7 +138,7 @@ input:focus {
 }
 
 .form {
-    border: 1px solid rgba(0, 87, 184, 1)!important;
+    border: 1px solid rgba(0, 87, 184, 1) !important;
     display: flex;
     border-radius: 5px;
     background-color: #FFFFFF;
