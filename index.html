@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <title>HELPTOUKR</title>
 </head>
 
@@ -39,10 +40,44 @@
                             <img src="assets/icons/add.svg" alt="add a trip" />
                         </button>
 
-                        <button type="button" class="header__button px-2 mx-2">
+                        <!-- <button type="button" class="header__button px-2 mx-2">
                             <img src="assets/icons/horizontal_dot.svg" alt="menu" />
-                        </button>
+                        </button> -->
 
+                        <div class="nav-item dropdown">
+                            <a class="nav-link header__button px-2 mx-2" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/horizontal_dot.svg" alt="menu" />
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/login.svg"
+                                            alt="login" class="me-4" />
+                                        <div>Вхід</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#"> <img src="./assets/icons/menu/car.svg" alt="car"
+                                            class="me-4" />
+                                        <div>Вашi поїздки</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/bell-ring.svg"
+                                            alt="bell-ring" class="me-4" />
+                                        <div>Повідомлення</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/volume.svg"
+                                            alt="volume" class="me-4" />
+                                        <div>Оголошення</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/hands.svg"
+                                            alt="hands" class="me-3" />
+                                        <div>Підтримка</div>
+                                    </a></li>
+                                <div class="underline"></div>
+                                <li><a class="dropdown-item" href="#"> <img src="./assets/icons/menu/sign-out.svg"
+                                            alt="sing out" class="me-4" />
+                                        <div>Вийти</div>
+                                    </a></li>
+                            </ul>
+                        </div>
                         <!-- dropdown файли для активних іконок -->
                         <!-- <div class="dropdown__profile">
                             <div class="dropdown__item my-2">
@@ -65,36 +100,6 @@
                             </div>
                         </div> -->
 
-                        <div class="dropdown__profile_advance">
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/login.svg" alt="login" class="me-4" />
-                                <div>Вхід</div>
-                            </div>
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/car.svg" alt="car" class="me-4" />
-                                <div>Вашi поїздки</div>
-                            </div>
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/bell-ring.svg" alt="bell-ring" class="me-4" />
-                                <div>Повідомлення</div>
-                            </div>
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/volume.svg" alt="volume" class="me-4" />
-                                <div>Оголошення</div>
-                            </div>
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/hands.svg" alt="hands" class="me-3" />
-                                <div>Підтримка</div>
-                            </div>
-
-                            <div class="underline"></div>
-
-                            <div class="dropdown__item">
-                                <img src="./assets/icons/menu/sign-out.svg" alt="sing out" class="me-4" />
-                                <div>Вийти</div>
-                            </div>
-                        </div>
-                        <!-- ./dropdown__profile_advance -->
                     </div>
                     <!-- ./nav-menu -->
 
@@ -285,7 +290,7 @@
                             <p class="header__logo me-3">HELPTOUKR</p>
                         </a>
 
-                        <img src="./assets/img/crest.svg" alt="crest" />
+                        <img src="./assets/img/emblem.svg" alt="Trident" />
 
                         <div class="footer__info d-flex flex-column text-end">
                             <a href="tel:+380504902673" class="fs-4">+ 38 (050) 490-26-73</a>
@@ -302,10 +307,14 @@
                             exercitationem a voluptas, ad odit.
                         </p>
                     </div>
+                    <p class="copyright">Helptoukr © 2022</p>
                 </div>
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
