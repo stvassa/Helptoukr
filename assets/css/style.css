@@ -6,9 +6,15 @@
 }
 body {
     font-family: 'Proba Pro', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
+:root {
+    --tshadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    --blue: rgb(0, 87, 184,1);
+    --btnbg:rgba(255, 255, 255, 0.07);
+    --mainbg:rgba(0, 87, 184, 0.05);
+}
 .header {
     position: absolute;
     top: 0;
@@ -19,7 +25,7 @@ body {
 
 .header__button {
     min-height: 35px;
-    background: rgba(255, 255, 255, 0.07);
+    background: var(--btnbg);
     backdrop-filter: blur(4px);
     border-radius: 3px;
 }
@@ -36,10 +42,10 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
-    background: #e92d2d;
+    background: var(--bs-danger);
 }
 
 .upper-dot_number {
@@ -49,9 +55,9 @@ body {
     padding: 0 3px;
     min-height: 7px;
     border-radius: 3px;
-    color: #fff;
+    color: var(--bs-white);
     font-size: 6px;
-    background: #e92d2d;
+    background: var(--bs-danger);
 }
 
 .header__avatar img {
@@ -67,7 +73,7 @@ body {
     display: flex;
     width: 220px;
     height: 51px;
-    background: #ffffff;
+    background: var(--bs-white);
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
@@ -87,10 +93,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-:root {
-    --tshadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-    --blue: #0057b8;
-}
+
 
 button {
     border: none;
@@ -103,7 +106,7 @@ button {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--bs-white);
 }
 
 a:hover {
@@ -144,7 +147,7 @@ input:focus {
     font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--bs-white);
     text-shadow: var(--tshadow);
     text-transform: uppercase;
 }
@@ -199,10 +202,10 @@ input:focus {
 }
 
 .form {
-    border: 1px solid rgba(0, 87, 184, 1) !important;
+    border: 1px solid var(--blue) !important;
     display: flex;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: var(--bs-white);
     margin-right: 1rem;
     width: 100%;
 }
@@ -231,7 +234,7 @@ input:focus {
     background-color: var(--blue);
     border-radius: 5px;
     font-size: 1.375rem;
-    color: #ffffff;
+    color: var(--bs-white);
     font-weight: bold;
 }
 
@@ -256,6 +259,7 @@ input:focus {
     margin-left: 7.375rem;
 }
 
+
 .fal {
     font-size: 1.375rem;
     line-height: 1.5rem;
@@ -268,15 +272,15 @@ input:focus {
 .bg_blue {
     background: radial-gradient(
         50% 14639.51% at 50% 50%,
-        #0057b8 0%,
-        #00399a 100%
+        rgb(0, 87, 184) 0%,
+        rgb(0, 57, 154) 100%
     );
 }
 .copyright{
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: rgb(170, 170, 170);
   margin-bottom: 0;
 }
 
