@@ -37,7 +37,10 @@ body {
 }
 .user_avatar{
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
+
 .upper-dot {
     position: absolute;
     top: 0;
