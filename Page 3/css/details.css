@@ -74,6 +74,8 @@ button {
 .content__line {
     display: flex;
     justify-content: space-between;
+    margin-top: 9.3rem;
+    margin-bottom: 4rem;
 }
 
 .bg__body {
