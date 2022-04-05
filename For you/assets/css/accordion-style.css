@@ -1,0 +1,21 @@
+.accordion-item{
+    margin-bottom: 10px;
+    color: inherit;
+}
+.accordion-item:last-child{
+    margin-bottom: 20px;
+}
+.accordion-button {
+    box-shadow:none;
+}
+.accordion-button:focus {
+    box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: var(--bs-white);
+    box-shadow:none;
+}
+.acc-title{
+    color: var(--bs-gray-600);
+}
