@@ -243,6 +243,46 @@ input:focus {
     margin-top: -131px;
 }
 
+.stepper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+
+
+.stepper svg {
+    z-index: 5;
+}
+
+.stepper .progress {
+    position: absolute;
+    border: 1px dashed rgba(0, 87, 184, 0.5);
+    display: block;
+    width: 65%;
+    height: 0;
+}
+
+.progress-icon {
+    z-index: 5;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+.progress-icon span {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.active-progress-icon span {
+    color: #000;
+}
+
 @media only screen and (max-width: 1000px) {
     .trip-header {
         margin-top: 0px;
