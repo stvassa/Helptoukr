@@ -79,26 +79,26 @@
                             </ul>
                         </div>
                         <!-- dropdown файли для активних іконок -->
-                        <!-- <div class="dropdown__profile">
-                            <div class="dropdown__item my-2">
+
+                        <!-- <div class="dropdown-item my-2">
                                 <img src="./assets/icons/menu/user.svg" alt="user" class="me-2" />
                                 <div>Профіль</div>
                             </div>
-                            <div class="dropdown__item my-2">
+                            <div class="dropdown-item my-2">
                                 <div class="position-relative me-2 p-1">
                                     <img src="./assets/icons/menu/car.svg" alt="car" class="position-relative" />
                                     <span class="upper-dot"></span>
                                 </div>
                                 <div>Вашi поїздки</div>
                             </div>
-                            <div class="dropdown__item my-2">
+                            <div class="dropdown-item my-2">
                                 <div class="position-relative me-2">
                                     <img src="./assets/icons/menu/bell-ring.svg" alt="bell-ring" class="me-2" />
                                     <span class="upper-dot_number">14</span>
                                 </div>
                                 <div>Повідомлення</div>
-                            </div>
-                        </div> -->
+                            </div> -->
+
 
                     </div>
                     <!-- ./nav-menu -->
@@ -195,7 +195,7 @@
                     </div>
 
                     <div class="d-grid px-2">
-                        <button class="btn btn-primary py-4" type="button">
+                        <button class="btn_big btn-primary py-4" type="button">
                             Шукати
                         </button>
                     </div>
@@ -210,28 +210,7 @@
                     <h1 class="style_h1">Пропозиції</h1>
                 </div>
 
-                <!-- <div id="cardP" class="card mb-3">
-                    <div class="row card-body align-items-center py-3">
-                        <div class="col-12 col-md-3 px-2 py-1">
-                            <span class="mx-2">24.03.2022</span>
-                        </div>
-                        <div class="col-12 col-md-3 px-2 py-1">
-                            <span class="mx-2">Київ</span>
-                            <img class="img_arrow mx-2" width="15px" height="15px" src="assets/icons/arrow-right.svg"
-                                alt="" />
-                            <span class="mx-2">Херсон</span>
-                        </div>
-                        <div class="col-12 col-md-3 px-2 py-1">
-                            <span class="flex-shrink-0">2 людей</span>
-                        </div>
-                        <div class="col-12 col-md-3 px-2 py-1">
-                            <span>Багажник вільний</span>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                <div class="accordion" id="accordionExample">
+                <!-- <div class="accordion" id="accordionExample">
                     <div class="accordion-item card">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -289,18 +268,15 @@
                                     <div class="row">
                                         <button type="button"
                                             class="col-xs-2 col-md-4 col-lg-3 btn btn-primary mx-2 my-2">Зарезервувати</button>
-                                        <button type="button"
+                                        <a role="button" href="#"
                                             class="col-xs-2 col-md-4 col-lg-3 btn btn-outline-secondary border-3 mx-2 my-2"
                                             disabled>Ваші
-                                            поїздки</button>
+                                            поїздки</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
                     <div class="accordion-item card">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -366,10 +342,780 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <!-- ./accordion  -->
+
+
+
+                <!-- ... -->
+                <!-- accordion для сторінки ваші пропозиції -->
+                <div class="accordion" id="accordionExample">
+
+                    <!-- Варінт броні для пасажира -->
+
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-warning text-dark">Зарезервовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <img class="user_avatar rounded-circle flex-shrink-0 me-2"
+                                            src="./assets/img/avatar.png" alt="user_avatar">
+                                        <span>Володимир Іванович Шевченко</span>
+                                    </div>
+
+                                </div>
+
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                        <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                                            +38(050)739-85-54</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                        <div class="col-md-4 py-1"><span class="acc-title">Автомобіль:</span>
+                                            <span>RENAULT LOGAN Cиній</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span>
+                                            <span>Заброньовано, очікуйте підтвердження від водія</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+                                        <div class="d-flex align-items-center col-xl-4">
+                                            <a href="#" role="button" class="btn btn-outline-primary me-2 px-2 border-3
+                                            my-2">Профіль водія</a>
+                                            <button type="button" class="chat my-2">
+                                                <svg class="chat-icon">
+                                                    <use xlink:href="./assets/icons/send.svg#send"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-primary">Підтверджено</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <img class="user_avatar rounded-circle flex-shrink-0 me-2"
+                                            src="./assets/img/avatar.png" alt="user_avatar">
+                                        <span>Володимир Іванович Шевченко</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                        <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                                            +38(050)739-85-54</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                        <div class="col-md-4 py-1"><span class="acc-title">Автомобіль:</span>
+                                            <span>RENAULT LOGAN Cиній</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span>поїздка
+                                            підтверджена, по-приїзді натисніть завершення поїзди</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+                                        <a href="#" role="button" class="col-xs-2 col-md-4 col-lg-3 btn btn-outline-success border-3 mx-2
+                                            my-2">Завершити</a>
+                                        <div class="d-flex align-items-center col-xl-4">
+                                            <a href="#" role="button" class="btn btn-outline-primary me-2 px-2 border-3
+                                            my-2">Профіль водія</a>
+                                            <button type="button" class="chat my-2">
+                                                <svg class="chat-icon">
+                                                    <use xlink:href="./assets/icons/send.svg#send"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Завершено</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <img class="user_avatar rounded-circle flex-shrink-0 me-2"
+                                            src="./assets/img/avatar.png" alt="user_avatar">
+                                        <span>Володимир Іванович Шевченко</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                        <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                                            +38(050)739-85-54</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                        <div class="col-md-4 py-1"><span class="acc-title">Автомобіль:</span>
+                                            <span>RENAULT LOGAN Cиній</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> поїздка
+                                            завершена, дякуємо що Ви в безпеці</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Скасовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <img class="user_avatar rounded-circle flex-shrink-0 me-2"
+                                            src="./assets/img/avatar.png" alt="user_avatar">
+                                        <span>Володимир Іванович Шевченко</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                        <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                                            +38(050)739-85-54</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                        <div class="col-md-4 py-1"><span class="acc-title">Автомобіль:</span>
+                                            <span>RENAULT LOGAN Cиній</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> поїздка
+                                            скасована, створіть новий запит</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Деактивовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <img class="user_avatar rounded-circle flex-shrink-0 me-2"
+                                            src="./assets/img/avatar.png" alt="user_avatar">
+                                        <span>Володимир Іванович Шевченко</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                        <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                                            +38(050)739-85-54</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                        <div class="col-md-4 py-1"><span class="acc-title">Автомобіль:</span>
+                                            <span>RENAULT LOGAN Cиній</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> дата поїздки
+                                            пройшла, створіть новий запит</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Варінт водія створення -->
+
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge add-badge">Створено</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span>
+                                            <span>Заброньовано, очікуйте підтвердження від водія</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+                                        <!-- <div class="d-flex align-items-center col-xl-4">
+                                            <a href="#" role="button" class="btn btn-outline-primary me-2 px-2 border-3
+                                            my-2">Профіль пасажира</a>
+                                            <button type="button" class="chat my-2">
+                                                <svg class="chat-icon">
+                                                    <use xlink:href="./assets/icons/send.svg#send"></use>
+                                                </svg>
+                                            </button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-warning text-dark">Зарезервовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> поїздка
+                                            зарезервована, підтвердіть виїзд</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-primary mx-2 my-2">Підтвердити</button>
+                                        <div class="d-flex align-items-center col-xl-4">
+                                            <a href="#" role="button" class="btn btn-outline-primary me-2 px-2 border-3
+                                            my-2">Профіль пасажира</a>
+                                            <button type="button" class="chat my-2">
+                                                <svg class="chat-icon">
+                                                    <use xlink:href="./assets/icons/send.svg#send">
+                                                    </use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-primary">Підтверджено</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span>поїздка
+                                            підтверджена, по-приїзді натисніть завершення поїзди</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="button"
+                                            class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+                                        <a href="#" role="button" class="col-xs-2 col-md-4 col-lg-3 btn btn-outline-success border-3 mx-2
+                                            my-2">Завершити</a>
+                                        <div class="d-flex align-items-center col-xl-4">
+                                            <a href="#" role="button" class="btn btn-outline-primary me-2 px-2 border-3
+                                            my-2">Профіль пасажира</a>
+                                            <button type="button" class="chat my-2">
+                                                <svg class="chat-icon">
+                                                    <use xlink:href="./assets/icons/send.svg#send"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Завершено</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> поїздка
+                                            завершена, дякуємо що Ви в безпеці</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Скасовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> поїздка
+                                            скасована, створіть новий запит</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div class="row card-body align-items-center py-1">
+
+                                    <span class="col-6 col-lg-2 badge bg-secondary">Деактивовано</span>
+
+                                    <div class="col-md-2 col-lg-2 h6 acc-title ms-2 my-2" id='calendar'>
+                                        24.03.2022
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-3 py-1">
+                                        <span>Київ</span>
+                                        <img class="img_arrow" width="15px" height="15px"
+                                            src="assets/icons/arrow-right.svg" alt="" />
+                                        <span class="">Херсон</span>
+                                    </div>
+
+                                    <div class="col py-1"> 2 людей</div>
+
+                                    <div class="col-md-12 col-lg-3 py-1 d-flex align-items-center">
+                                        <span class="acc-leybl">Ваша поїздка</span>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md py-1">
+                                            <span class="acc-title">Місце відїзду:</span>
+                                            <span>вул. кошиця, 3</span>
+                                        </div>
+                                        <div class="col-md py-1"><span class="acc-title">Попутні
+                                                зупинки:
+                                            </span><span>м.
+                                                Запорїжжя</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"><span class="acc-title">Коментар:</span>
+                                            <span>багажник великий, влізуть речі і тварини, перевагу
+                                                надам жінкам з
+                                                дітьми</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span> дата поїздки
+                                            пройшла, створіть новий запит</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <!-- ./accordion для сторінки ваші пропозиції -->
 
                 <div class="d-grid text-center">
-                    <button class="btn btn-primary py-4" type="button">
+                    <button class="btn_big btn-primary py-4" type="button">
                         Більше
                     </button>
                 </div>
@@ -417,7 +1163,7 @@
 
 
                 <div class="d-grid text-center">
-                    <button class="btn btn-primary py-4" type="button">
+                    <button class="btn_big btn-primary py-4" type="button">
                         Більше
                     </button>
                 </div>

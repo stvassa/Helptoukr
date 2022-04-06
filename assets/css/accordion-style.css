@@ -1,9 +1,6 @@
 .accordion-item{
-    margin-bottom: 10px;
-    color: inherit;
-}
-.accordion-item:last-child{
     margin-bottom: 20px;
+    color: inherit;
 }
 .accordion-button {
     box-shadow:none;
@@ -19,3 +16,35 @@
 .acc-title{
     color: var(--bs-gray-600);
 }
+
+.acc-leybl{
+    color: var(--blue);
+}
+
+.chat{
+    width: 50px;
+    height: 50px;
+    background: var(--mainbg);
+    backdrop-filter: blur(4px);
+    border-radius: 17px;
+}
+.chat-icon{
+    width: 40px;
+    height: 40px;
+    fill: var(--blue);
+}
+.badge{
+    width: 150px;
+    border-radius: 10px;
+}
+.add-badge{
+    border: 3px solid var(--blue);
+    color: var(--blue);
+}
+.bg-primary{
+    background-color: var(--blue)!important;
+}
+
+
+
+
