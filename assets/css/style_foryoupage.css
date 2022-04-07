@@ -1,0 +1,128 @@
+
+/* DETAILS OF TRAVEL */
+
+.content__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg__body {
+    background:var(--bg-main)
+}
+
+.bg_blue {
+    background: radial-gradient(50% 14639.51% at 50% 50%, #0057B8 0%, #00399A 100%);
+}
+
+.nav__item_bg {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dot {
+    padding: 15px 8px;
+}
+
+.box__back {
+    background: rgba(35, 116, 240, 0.09);
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+}
+
+.box__back p {
+    color: rgba(0, 87, 184, 1);
+}
+
+.container__min {
+    max-width: 34.875rem;
+    margin: 0 auto;
+}
+
+.fs-1 {
+    font-weight: bold;
+}
+
+.box_time {
+    display: flex;
+}
+
+.box_time time {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.box_gray {
+    color: rgba(92, 97, 101, 1);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.travel__img {
+    background: rgba(0, 87, 184, 0.05);
+    border-radius: 17px;
+    width: 69.74px;
+    height: 67px;
+}
+
+.display770 {
+    display: none;
+}
+
+/* FOR YOU */
+
+.fs-1 {
+    font-size: 3.125rem!important;
+    font-weight: medium;
+}
+
+.content {
+    margin-top: 7.3rem;
+}
+
+.height {
+    height: 104px;
+}
+
+.border-bottom-blue {
+    border-bottom: 2px solid #0057B8!important;
+}
+
+@media (max-width: 775px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        text-align: center!important;
+    }
+
+    .display770 {
+        display: block;
+    }
+
+    .dispalyEmblem {
+        display: none;
+    }
+
+    .me-5 {
+        margin-right: .5rem!important;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    .content__line {
+        justify-content: center;
+    }
+}
