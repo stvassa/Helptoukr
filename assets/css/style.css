@@ -232,6 +232,11 @@ input:focus {
     height: 60px;
 }
 
+.border-filtr{
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+
 .btn_big {
     border-radius: 5px;
     font-size: 1.375rem;
@@ -257,6 +262,7 @@ color: var(--blue);
      background-color: var(--blue);
     border-color:var(--blue);
 }
+
 
 .style_h1 {
     font-size: 3.25rem;
@@ -307,13 +313,20 @@ color: var(--blue);
 
 /* media rules */
 
+/* devices lower 320px */
+@media (max-width: 320px) {
+    .header-wrap{
+        flex-wrap: wrap;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .header__logo {
         font-size: 18px;
     }
     .title__header {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .style_h1 {
         font-size: 2.5rem;
