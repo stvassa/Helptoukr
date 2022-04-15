@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_foryoupage.css">
+    <title>Details of travel</title>
 </head>
 
 <body>
@@ -118,49 +120,85 @@
         </div>
     </header>
 
-    <main class="container" style="margin-bottom: 50px">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 style="text-align: center;font-weight: bold;margin-top: 170px;">Оголошення</h1>
-                <h5 style="text-align: center;margin-top: 22px;">Розміщуйте інформацію звідки і куди вас забрати</h5>
+    <div class="content__line" style="margin-top: 125px;">
+        <a class="ms-5 dn" href="test.html">
+            <div class="box__back dn">
+                <img src="assets/icons/arrow_left.svg" width="30" height="17" alt="">
+                <p class="ms-3 me-3 fs-5">Назад</p>
+            </div>
+        </a>
+
+        <a class="me-5 dn" href="index.html">
+            <div class="box__back dn">
+                <p class="me-3 ms-3 fs-5">Головна</p>
+                <img src="assets/icons/arrow_right.svg" width="30" height="17" alt="">
+            </div>
+        </a>
+    </div>
+
+    <div class="container__min">
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                    <div class="box_time mb-2">
+                        <img class="rounded-circle" src="assets/img/avatar.png" alt="">
+                    </div>
+                    <div class="name fs-5">
+                        <p>Володимир Іванович Шевченко</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <form style="max-width: 1143px;margin-top: 60px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="margin-bottom: 24px;">
-                        <div class="input-group"><span class="input-group-text"><i
-                                    class="fas fa-map-marker-alt"></i></span><input class="form-control" type="text"
-                                placeholder="Звідки?" style="height: 60px;"></div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Номер:</p>
                     </div>
-                    <div class="col-md-4" style="margin-bottom: 24px;">
-                        <div class="input-group"><span class="input-group-text"><i
-                                    class="fas fa-map-marker-alt"></i></span><input class="form-control" type="text"
-                                placeholder="Місце прибуття" style="height: 60px;"></div>
-                    </div>
-                    <div class="col-md-4" style="margin-bottom: 24px;">
-                        <div class="input-group"><span class="input-group-text"><i
-                                    class="fas fa-users"></i></span><input class="form-control" type="number"
-                                placeholder="Кількість пасажирів" style="height: 60px;" min="1" value="1"></div>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 24px;">
-                    <div class="col-md-12">
-                        <div class="input-group"><span class="input-group-text"><i
-                                    class="far fa-edit"></i></span><textarea class="form-control" placeholder="Коментар"
-                                style="height: 136px;"></textarea></div>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 24px;">
-                    <div class="col"><button class="btn btn-primary" type="button"
-                            style="color: var(--bs-white);background: #0057b8;height: 70px;width: 100%;">Далі</button>
+                    <div class="fs-5">
+                        <p>+ 38 (050) 739-85-54</p>
                     </div>
                 </div>
             </div>
-        </form>
-    </main>
-
-    <footer class="footer bg_blue py-3">
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Пошта:</p>
+                    </div>
+                    <div class="fs-5">
+                        <p>name@mail.ua</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Автомобіль:</p>
+                    </div>
+                    <div class="fs-5">
+                        <p>RENAULT LOGAN Cиній</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Коментар:</p>
+                    </div>
+                    <div class="fs-5 w-75 text-end">
+                        <p>багажник великий, влізуть речі і тварини, перевагу надам жінкам з дітьми</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg_blue py-3 mt-5">
         <div class="container">
             <div class="row">
                 <div
@@ -190,7 +228,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
