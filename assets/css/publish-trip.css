@@ -1,0 +1,64 @@
+span {
+    font-family: 'Proba Pro';
+    font-weight: 400;
+    color: #0057b8;
+}
+
+body {
+    background: rgb(242,247,251);
+}
+
+.header-btn-group {
+    background: #0057b8;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.header-btn-group img {
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+}
+
+.header-btn-group:last-child img {
+    margin-top: 20px;
+}
+
+.form-container {
+    padding-top: 50px;
+}
+
+.first-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-step > svg {
+    margin-left: 18px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .publish-trip {
+        height: 57.875rem;
+    }
+    
+    .publish-trip-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3px 0px;
+    }
+
+    .publish-trip-form .first-step {
+        margin: 10px 0px;
+    }
+    
+    .publish-trip-header {
+        
+    }
+}

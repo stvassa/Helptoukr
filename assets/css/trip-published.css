@@ -1,0 +1,94 @@
+body {
+    background: rgb(242,247,251);
+}
+
+.trip-published-container {
+    height: 52.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.driver-backgorund-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.driver-backgorund {
+    width: 671px;
+    height: 671px;
+    background: url('../img/driver.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.trip-published-container .stepper {
+    padding-top: 50px;
+}
+
+.trip-published-form {
+    margin-top: -130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trip-published-form h1 {
+    font-family: 'Proba Pro';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.trip-published-form a {
+    font-family: 'Proba Pro';
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 50px;
+    width: 362px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .driver-backgorund {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .trip-published-form h1 {
+        font-size: 40px;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    .driver-backgorund {
+        width: 400px;
+        height: 400px;
+    }
+
+    .trip-published-form h1 {
+        font-size: 32px;
+    }
+    
+    .driver-backgorund-container {
+        margin: 100px 0;
+    }
+
+    .trip-published-form {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+
+    
+    .driver-backgorund {
+        width: 400px;
+        height: 400px;
+    }
+    
+}
