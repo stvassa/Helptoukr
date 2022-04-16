@@ -1,0 +1,58 @@
+.specify-location-map {
+    height: 470px;
+    border: 1px solid #000;
+}
+
+.specify-location-btn, .specify-location-btn button {
+    height: 68px;
+}
+
+.continue-btn {
+    width: 362px;
+}
+
+.form-autosuggest {
+    display: flex;
+    align-items: center;
+}
+
+.form-autosuggest svg {
+    width: 24px;
+    height: 24px;
+    fill: rgb(208,211,213);
+    margin: 0px 10px;
+}
+
+.form-autosuggest .inp {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1220px) {
+    .continue-btn {
+        width: 181px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .publish-trip {
+        height: 57.875rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .publish-trip {
+        height: 64.875rem;
+    }
+    
+    .autocomplete-container {
+       flex-direction: column;
+    }
+    
+    .autocomplete-container .specify-location-btn {
+        margin-top: 15px;
+    }
+    
+    .autocomplete-container .specify-location-btn, .autocomplete-container .specify-location-btn button {
+        width: 100%;
+    }
+}
