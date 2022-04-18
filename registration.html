@@ -22,8 +22,7 @@
 </head>
 
 <body>
-    <header class="header"
-        style="background: radial-gradient(rgb(0,87,184) 0%, rgb(0,57,154) 100%);font-family: 'Proba Pro';">>
+    <header class="header bg_blue">
         <div class="container">
             <div class="row">
                 <div class="col py-1 mb-3 d-flex justify-content-between align-items-center">
@@ -34,29 +33,37 @@
                     <img src="./assets/img/emblem.svg" alt="Trident" />
                     <!-- nav-menu -->
                     <div class="d-flex justify-content-between align-items-center position-relative">
-                        <button type="button" class="header__button px-2 mx-2">
-                            <img src="assets/icons/user.svg" alt="user" />
+                        <button class="header__avatar mx-2">
+                            <img class="user_avatar" src="assets/img/avatar.png" alt="user avatar" />
+                            <span class="upper-dot"></span>
                         </button>
+                        <!-- Если юзер залогинился показывается его аватарка, если нет, кнопка с юзером -->
+                        <!-- <button
+                                type="button"
+                                class="header__button px-2 mx-2"
+                            >
+                                <img src="assets/icons/user.svg" alt="user" />
+                            </button> -->
 
                         <button type="button" class="header__button mx-2 px-1">
                             <img src="assets/icons/add.svg" alt="add a trip" />
                         </button>
 
-                        <div class="nav-item dropdown">
+                        <div class="nav-item dropdown" style="border: 0!important;">
                             <a class="nav-link header__button px-2 mx-2" href="#" role="button" id="dropdownMenuLink"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="assets/icons/horizontal_dot.svg" alt="menu" />
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/login.svg"
+                                <!-- <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/login.svg"
                                             alt="login" class="me-4" />
                                         <div>Вхід</div>
-                                    </a></li>
-                                <!-- <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/user.svg"
+                                    </a></li> -->
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/user.svg"
                                             alt="login" class="me-4" />
                                         <div>Профіль</div>
-                                    </a></li> -->
+                                    </a></li>
                                 <li><a class="dropdown-item" href="yourtravels.html"> <img
                                             src="./assets/icons/menu/car.svg" alt="car" class="me-4" />
                                         <div>Вашi поїздки</div>
@@ -110,7 +117,7 @@
         </div>
     </header>
 
-    <main class="container mb-5 mt-5">
+    <main class="container mb-5 mt-6">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center" style="margin-top: 64px;font-weight: bold;">Реєстрація</h1>

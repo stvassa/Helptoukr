@@ -1,95 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/trip-published.css">
     <title>HELPTOUKR</title>
 </head>
+
 <body>
-<div class="bg_blue">
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-between align-items-center py-4">
-            <div href="/" class="d-flex align-items-center col-md-4 mb-2 mb-md-0 header-icons">
-                <a href=""><p class="header__logo me-5">HELPTOUKR</p></a>
-                <a href="" class="header-btn-group"><img class="mx-2" src="assets/icons/search.svg" alt=""></a>
-                <a href="" class="header-btn-group"><img class="mx-2" src="assets/icons/add.svg" alt=""></a>
-                <a href="" class="header-btn-group"><img class="mx-2" src="assets/icons/horizontal_dot.svg" alt=""></a>
+    <header class="header bg_blue">
+        <div class="container">
+            <div class="row">
+                <div class="col py-1 mb-3 d-flex justify-content-between align-items-center">
+                    <a href="./index.html">
+                        <p class="header__logo me-3">HELPTOUKR</p>
+                    </a>
+
+                    <img src="./assets/img/emblem.svg" alt="Trident" />
+                    <!-- nav-menu -->
+                    <div class="d-flex justify-content-between align-items-center position-relative">
+                        <button class="header__avatar mx-2">
+                            <img class="user_avatar" src="assets/img/avatar.png" alt="user avatar" />
+                            <span class="upper-dot"></span>
+                        </button>
+                        <!-- Если юзер залогинился показывается его аватарка, если нет, кнопка с юзером -->
+                        <!-- <button
+                                type="button"
+                                class="header__button px-2 mx-2"
+                            >
+                                <img src="assets/icons/user.svg" alt="user" />
+                            </button> -->
+
+                        <button type="button" class="header__button mx-2 px-1">
+                            <img src="assets/icons/add.svg" alt="add a trip" />
+                        </button>
+
+                        <div class="nav-item dropdown" style="border: 0!important;">
+                            <a class="nav-link header__button px-2 mx-2" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/icons/horizontal_dot.svg" alt="menu" />
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <!-- <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/login.svg"
+                                            alt="login" class="me-4" />
+                                        <div>Вхід</div>
+                                    </a></li> -->
+                                <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/user.svg"
+                                            alt="login" class="me-4" />
+                                        <div>Профіль</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="yourtravels.html"> <img
+                                            src="./assets/icons/menu/car.svg" alt="car" class="me-4" />
+                                        <div>Вашi поїздки</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="message.html"><img
+                                            src="./assets/icons/menu/bell-ring.svg" alt="bell-ring" class="me-4" />
+                                        <div>Повідомлення</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="./advertisement.html"><img
+                                            src="./assets/icons/menu/volume.svg" alt="volume" class="me-4" />
+                                        <div>Оголошення</div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="chat.html"><img src="./assets/icons/menu/hands.svg"
+                                            alt="hands" class="me-3" />
+                                        <div>Підтримка</div>
+                                    </a></li>
+                                <div class="underline"></div>
+                                <li><a class="dropdown-item" href="index.html"> <img
+                                            src="./assets/icons/menu/sign-out.svg" alt="sing out" class="me-4" />
+                                        <div>Вийти</div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown файли для активних іконок -->
+                        <!-- <div class="dropdown__profile">
+                            <div class="dropdown__item my-2">
+                                <img src="./assets/icons/menu/user.svg" alt="user" class="me-2" />
+                                <div>Профіль</div>
+                            </div>
+                            <div class="dropdown__item my-2">
+                                <div class="position-relative me-2 p-1">
+                                    <img src="./assets/icons/menu/car.svg" alt="car" class="position-relative" />
+                                    <span class="upper-dot"></span>
+                                </div>
+                                <div>Вашi поїздки</div>
+                            </div>
+                            <div class="dropdown__item my-2">
+                                <div class="position-relative me-2">
+                                    <img src="./assets/icons/menu/bell-ring.svg" alt="bell-ring" class="me-2" />
+                                    <span class="upper-dot_number">14</span>
+                                </div>
+                                <div>Повідомлення</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- ./nav-menu -->
+
+                </div>
             </div>
+        </div>
+    </header>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <img class="nav-link px-2" src="assets/img/emblem.svg" alt="">
-            </ul>
-
-            <div class="col-md-3 text-end">
-                <a href="tel:+ 38 (050) 490-26-73" class="header__number">+ 38 (050) 490-26-73</a>
-                <a href="mailto:vashaorganizaciya@mail.ua" class="header__mail">vashaorganizaciya@mail.ua</a>
+    <div class="container trip-published-container mt-6">
+        <div class="stepper col-8 m-4">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
             </div>
-        </header>
-    </div>
-</div>
-
-<div class="container  trip-published-container">
-    <div class="stepper col-8 m-4">
-        <div class="progress" style="height: 1px;">
-            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress-icon">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5" stroke-width="2"/>
-                <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z" fill="#0057B8" fill-opacity="0.5"/>
-            </svg>
-            <span>Створення</span>
-        </div>
-        <div class="progress-icon">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5" stroke-width="2"/>
-                <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z" fill="#0057B8" fill-opacity="0.5"/>
-            </svg>
-            <span>Деталі</span>
-        </div>
-        <div class="progress-icon active-progress-icon">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="32" height="32" rx="16" stroke="#000" stroke-opacity="0.5" stroke-width="2"/>
-                <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z" fill="#000" fill-opacity="0.5"/>
-            </svg>
-            <span>Завершення</span>
-        </div>
-    </div>
-    
-    <div class="col-10 container driver-backgorund-container">
-        <div class="driver-backgorund">
-        </div>
-        <div class="trip-published-form">
-            <h1>Поїздка опублікована</h1>
-            <a class="btn btn-primary me-md-2 nav-btns" type="button">
-                <span>Повернутись на головну</span>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="bg_blue">
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
-            <div href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0">
-                <a href=""><p class="header__logo me-5">HELPTOUKR</p></a>
+            <div class="progress-icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5"
+                        stroke-width="2" />
+                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
+                        fill="#0057B8" fill-opacity="0.5" />
+                </svg>
+                <span>Створення</span>
             </div>
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <img class="nav-link px-2" src="assets/img/emblem.svg" alt="">
-            </ul>
-
-            <div class="col-md-3 text-end">
-                <a href="tel:+ 38 (050) 490-26-73" class="header__number">+ 38 (050) 490-26-73</a>
-                <a href="mailto:vashaorganizaciya@mail.ua" class="header__mail">vashaorganizaciya@mail.ua</a>
+            <div class="progress-icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5"
+                        stroke-width="2" />
+                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
+                        fill="#0057B8" fill-opacity="0.5" />
+                </svg>
+                <span>Деталі</span>
             </div>
-        </footer>
+            <div class="progress-icon active-progress-icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#000" stroke-opacity="0.5"
+                        stroke-width="2" />
+                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
+                        fill="#000" fill-opacity="0.5" />
+                </svg>
+                <span>Завершення</span>
+            </div>
+        </div>
+
+        <div class="col-10 container driver-backgorund-container">
+            <div class="driver-backgorund">
+            </div>
+            <div class="trip-published-form">
+                <h1>Поїздка опублікована</h1>
+                <a class="btn btn-primary me-md-2 nav-btns" type="button">
+                    <span>Повернутись на головну</span>
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="bg_blue">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+                <div href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0">
+                    <a href="">
+                        <p class="header__logo me-5">HELPTOUKR</p>
+                    </a>
+                </div>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <img class="nav-link px-2" src="assets/img/emblem.svg" alt="">
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <a href="tel:+ 38 (050) 490-26-73" class="header__number">+ 38 (050) 490-26-73</a>
+                    <a href="mailto:vashaorganizaciya@mail.ua" class="header__mail">vashaorganizaciya@mail.ua</a>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>
