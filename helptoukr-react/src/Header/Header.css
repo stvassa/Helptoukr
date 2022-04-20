@@ -1,0 +1,123 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: radial-gradient(rgb(0,87,184) 0%, rgb(0,57,154) 100%);
+    font-family: 'Proba Pro';
+}
+
+.header__button {
+    min-height: 35px;
+    background: var(--btnbg);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+}
+
+.header__avatar {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+.user_avatar{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.upper-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: var(--bs-danger);
+}
+
+.upper-dot_number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 3px;
+    min-height: 7px;
+    border-radius: 3px;
+    color: var(--bs-white);
+    font-size: 6px;
+    background: var(--bs-danger);
+}
+
+.header__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.dropdown-item {
+    position: relative;
+    padding: 15px 0 15px 25px;
+    display: flex;
+    width: 220px;
+    height: 51px;
+    background: var(--bs-white);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.dropdown-item:hover {
+    background: rgba(0, 87, 184, 0.05);
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    margin: 25px 0;
+    background: rgba(0, 87, 184, 0.21);
+}
+
+.my {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--bs-white);
+    text-shadow: var(--tshadow);
+    text-transform: uppercase;
+}
+
+.header__number {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: var(--tshadow);
+}
+
+.header__mail {
+    text-shadow: var(--tshadow);
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 46.875rem;
+    background: url('./flag.png');
+    background-size: cover;
+}
+
+.title__header {
+    font-size: 4.125rem;
+    font-weight: bold;
+    text-shadow: var(--tshadow);
+}
+
+.title__content {
+    font-size: 1.5rem;
+    font-weight: medium;
+    text-shadow: var(--tshadow);
+}
