@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style_foryoupage.css">
+  <link rel="stylesheet" href="assets/css/accordion-style.css">
+  <title>HELPTOUKR | Пропозиції</title>
+</head>
+
+<body class="main__content">
+  <header class="header bg_blue">
+    <div class="container">
+      <div class="row">
+        <div class="col py-2 mb-3 d-flex justify-content-between align-items-center">
+          <a href="./index.html">
+            <p class="header__logo me-3">HELPTOUKR</p>
+          </a>
+
+          <img src="./assets/img/emblem.svg" alt="Trident" />
+          <!-- nav-menu -->
+          <div class="d-flex justify-content-between align-items-center position-relative">
+            <button class="header__avatar mx-2">
+              <img class="user_avatar" src="assets/img/avatar.png" alt="user avatar" />
+              <span class="upper-dot"></span>
+            </button>
+            <!-- Если юзер залогинился показывается его аватарка, если нет, кнопка с юзером -->
+            <!-- <button
+                                type="button"
+                                class="header__button px-2 mx-2"
+                            >
+                                <img src="assets/icons/user.svg" alt="user" />
+                            </button> -->
+
+            <button type="button" class="header__button mx-2 px-1">
+              <img src="assets/icons/add.svg" alt="add a trip" />
+            </button>
+
+            <div class="nav-item dropdown" style="border: 0!important;">
+              <a class="nav-link header__button px-2 mx-2" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/icons/horizontal_dot.svg" alt="menu" />
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <!-- <li><a class="dropdown-item" href="#"><img src="./assets/icons/menu/login.svg"
+                                            alt="login" class="me-4" />
+                                        <div>Вхід</div>
+                                    </a></li> -->
+                <li><a class="dropdown-item" href="./accountpage.html"><img src="./assets/icons/menu/user.svg"
+                      alt="login" class="me-4" />
+                    <div>Профіль</div>
+                  </a></li>
+                <li><a class="dropdown-item" href="yourtravels.html"> <img src="./assets/icons/menu/car.svg" alt="car"
+                      class="me-4" />
+                    <div>Вашi поїздки</div>
+                  </a></li>
+                <li><a class="dropdown-item" href="message.html"><img src="./assets/icons/menu/bell-ring.svg"
+                      alt="bell-ring" class="me-4" />
+                    <div>Повідомлення</div>
+                  </a></li>
+                <li><a class="dropdown-item" href="./advertisement.html"><img src="./assets/icons/menu/volume.svg"
+                      alt="volume" class="me-4" />
+                    <div>Оголошення</div>
+                  </a></li>
+                <li><a class="dropdown-item" href="chat.html"><img src="./assets/icons/menu/hands.svg" alt="hands"
+                      class="me-3" />
+                    <div>Підтримка</div>
+                  </a></li>
+                <div class="underline"></div>
+                <li><a class="dropdown-item" href="index.html"> <img src="./assets/icons/menu/sign-out.svg"
+                      alt="sing out" class="me-4" />
+                    <div>Вийти</div>
+                  </a></li>
+              </ul>
+            </div>
+
+            <!-- dropdown файли для активних іконок -->
+            <!-- <div class="dropdown__profile">
+                            <div class="dropdown__item my-2">
+                                <img src="./assets/icons/menu/user.svg" alt="user" class="me-2" />
+                                <div>Профіль</div>
+                            </div>
+                            <div class="dropdown__item my-2">
+                                <div class="position-relative me-2 p-1">
+                                    <img src="./assets/icons/menu/car.svg" alt="car" class="position-relative" />
+                                    <span class="upper-dot"></span>
+                                </div>
+                                <div>Вашi поїздки</div>
+                            </div>
+                            <div class="dropdown__item my-2">
+                                <div class="position-relative me-2">
+                                    <img src="./assets/icons/menu/bell-ring.svg" alt="bell-ring" class="me-2" />
+                                    <span class="upper-dot_number">14</span>
+                                </div>
+                                <div>Повідомлення</div>
+                            </div>
+                        </div> -->
+
+          </div>
+          <!-- ./nav-menu -->
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <a class="dn" href="index.html">
+      <div class="box__back dn ms-5">
+        <img src="assets/icons/arrow_left.svg" width="30" height="17" alt="">
+        <p class="ms-3 me-3 fs-5">Назад</p>
+      </div>
+    </a>
+
+    <div class="container">
+      <div class="text-center">
+        <h1 class="text-center">Пропозиції для Вас</h1>
+      </div>
+
+      <div class="row align-items-start my-5">
+        <div class="col fs-6 mx-4 d-flex justify-content-center flex-column align-items-center">
+          <img src="assets/icons/done.svg" width="34" height="34" alt="">
+          <p class="my-4">Оберіть поїздку - натисніть на трикутник з права для отримання повної інформаціїї</p>
+        </div>
+        <div class="col fs-6 mx-4 d-flex justify-content-center flex-column align-items-center">
+          <img src="assets/icons/done.svg" width="34" height="34" alt="">
+          <p class="my-4">Забронюйте або зв’яжіться з водіем для подальшого узгодження поїздки</p>
+        </div>
+        <div class="col fs-6 mx-4 d-flex justify-content-center flex-column align-items-center">
+          <img src="assets/icons/done.svg" width="34" height="34" alt="">
+          <p class="my-4">Зачекайте на підтвердження поїздки від водія</p>
+        </div>
+        <div class="col fs-6 mx-4 d-flex justify-content-center flex-column align-items-center">
+          <img src="assets/icons/done.svg" width="34" height="34" alt="">
+          <p class="my-4">Перейдіть до Профілю поїздки для відстеження статусу</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs justify-content-center border-0 mb-5" id="myTab" role="tablist">
+        <li class="nav-item col-sm-4 fs-6 d-flex justify-content-center flex-column align-items-center"
+          role="presentation">
+          <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">
+            <p class="nl__content fs-5 fw-bold">Усе</p>
+            <p class="nl__content fs-5 fw-bold">2</p>
+          </button>
+        </li>
+        <li class="nav-item col-sm-4 fs-6 d-flex justify-content-center flex-column align-items-center"
+          role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">
+            <img class="nl__content" src="assets/icons/car.svg" alt="">
+            <p class="nl__content fs-5 fw-bold">1</p>
+          </button>
+        </li>
+        <li class="nav-item col-sm-4 fs-6 d-flex justify-content-center flex-column align-items-center"
+          role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+            role="tab" aria-controls="contact" aria-selected="false">
+            <img class="nl__content" src="assets/icons/truck.svg" alt="">
+            <p class="nl__content fs-5 fw-bold">1</p>
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item card">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <div class="row card-body align-items-center py-1">
+                    <div class="col-12 col-md-3 py-1 acc-title" id='calendar'>
+                      24.03.2022
+                    </div>
+                    <div class="col-12 col-md-3 py-1">
+                      <span>Київ</span>
+                      <img class="img_arrow" width="15px" height="15px" src="assets/icons/arrow-right.svg"
+                        alt="їхати до" />
+                      <span class="">Херсон</span>
+                    </div>
+                    <div class="col-12 col-md-3 py-1">100кг картоплі</div>
+                    <div class="col-12 col-md-3 py-1 d-flex align-items-center"> <img
+                        class="user_avatar rounded-circle flex-shrink-0 me-2" src="./assets/img/avatar.png" alt="">
+                      <span>Володимир Іванович Шевченко</span>
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body border-top">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md py-1">
+                        <span class="acc-title">Місце відїзду: </span>
+                        вул. кошиця, 3
+                      </div>
+                      <div class="col-md py-1"><span class="acc-title">Попутні зупинки: </span>м.Запорїжжя</div>
+                      <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                        +38(050)739-85-54</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 py-1"><span class="acc-title">Коментар: </span>
+                        багажник великий, влізуть речі і тварини, перевагу надам жінкам з
+                        дітьми
+                      </div>
+                      <div class="col-md-4 py-1"><span class="acc-title">Автомобіль: </span>
+                        RENAULT LOGAN Cиній</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 py-1"> <span class="acc-title">Статус:</span>
+                        Вільний - Ви можете забронювати поїздку
+                      </div>
+                    </div>
+                    <div class="row">
+                      <button type="button"
+                        class="col-xs-2 col-md-4 col-lg-3 btn btn-primary mx-2 my-2">Зарезервувати</button>
+                      <a role="button" href="#"
+                        class="col-xs-2 col-md-4 col-lg-3 btn btn-outline-secondary border-3 mx-2 my-2 disabled">Ваші
+                        поїздки</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item card">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="row card-body align-items-center py-1">
+                    <div class="col-12 col-md-3 py-1 acc-title" id='calendar'>
+                      23.03.2022
+                    </div>
+                    <div class="col-12 col-md-3 py-1">
+                      <span>Київ</span>
+                      <img class="img_arrow" width="15px" height="15px" src="assets/icons/arrow-right.svg" alt="" />
+                      <span class="">Херсон</span>
+                    </div>
+                    <div class="col-12 col-md-3 py-1"> 2 людей
+                    </div>
+                    <div class="col-12 col-md-3 py-1 d-flex align-items-center"> <img
+                        class="user_avatar rounded-circle flex-shrink-0 me-2" src="./assets/img/avatar.png" alt="">
+                      <span>Володимир Іванович Шевченко</span>
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body border-top">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md py-1">
+                        <span class="acc-title">Місце відїзду: </span>вул. кошиця, 3</div>
+                      <div class="col-md py-1"><span class="acc-title">Попутні зупинки: </span>м.Запорїжжя</div>
+                      <div class="col-md py-1 flex-shrink-0"><span class="acc-title">Номер:</span>
+                        +38(050)739-85-54</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 py-1"><span class="acc-title">Коментар: </span>
+                        багажник великий, влізуть речі і тварини, перевагу надам жінкам з
+                        дітьми
+                      </div>
+                      <div class="col-md-4 py-1"><span class="acc-title">Автомобіль: </span>
+                        RENAULT LOGAN Cиній</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 py-1"> <span class="acc-title">Статус: </span>
+                        Заброньовано - Скасуйте або перейдіть у Ваші поїздки
+                      </div>
+                    </div>
+                    <div class="row">
+                      <button type="button"
+                        class="col-xs-2 col-md-4 col-lg-3 btn btn-danger mx-2 my-2">Скасувати</button>
+                      <a href="#" role="button" class="col-xs-2 col-md-4 col-lg-3 btn btn-outline-primary border-3 mx-2
+                                            my-2">Ваші поїздки</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./accordion  -->
+
+        </div>
+        <div class="tab-pane fade text-center h5" style="color: crimson;" id="profile" role="tabpanel"
+          aria-labelledby="profile-tab">
+          Розділ в розробці. Вибачте
+          за тимчасові незручності</div>
+        <div class="tab-pane fade text-center h5" style="color: crimson;" id="contact" role="tabpanel"
+          aria-labelledby="contact-tab">
+          Розділ в розробці. Вибачте
+          за тимчасові незручності</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer bg_blue py-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="footer__wrapper col py-3 mb-4 my d-flex justify-content-between align-items-center flex-wrap">
+          <a href="#">
+            <p class="header__logo me-3">HELPTOUKR</p>
+          </a>
+
+          <img src="./assets/img/emblem.svg" alt="Trident" />
+
+          <div class="footer__info d-flex flex-column text-end">
+            <a href="tel:+380504902673" class="fs-4">+ 38 (050) 490-26-73</a>
+            <a href="mailto:vashaorganizaciya@mail.ua">vashaorganizaciya@mail.ua</a>
+          </div>
+        </div>
+        <div class="footer__descr text-white">
+          <p class="fw-bold">Про проект</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Enim ipsa nihil eius aperiam
+            fugiat dolorum iure quis. Deleniti, repellat
+            consequuntur placeat sit veritatis at distinctio
+            exercitationem a voluptas, ad odit.
+          </p>
+        </div>
+        <p class="copyright">Helptoukr © 2022</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

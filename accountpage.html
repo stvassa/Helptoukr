@@ -2,14 +2,13 @@
 <html lang="ua">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/trip-published.css">
-    <title>HELPTOUKR | Поїздка опублікована</title>
+    <link rel="stylesheet" href="assets/css/style_foryoupage.css">
+    <title>HELPTOUKR | Особистий кабінет</title>
 </head>
 
 <body>
@@ -24,21 +23,18 @@
                     <img src="./assets/img/emblem.svg" alt="Trident" />
                     <!-- nav-menu -->
                     <div class="d-flex justify-content-between align-items-center position-relative">
-                        <button class="header__avatar mx-2">
+                        <a role="button" href="./accountpage.html" class="header__avatar mx-2">
                             <img class="user_avatar" src="assets/img/avatar.png" alt="user avatar" />
                             <span class="upper-dot"></span>
-                        </button>
+                        </a>
                         <!-- Если юзер залогинился показывается его аватарка, если нет, кнопка с юзером -->
-                        <!-- <button
-                                type="button"
-                                class="header__button px-2 mx-2"
-                            >
-                                <img src="assets/icons/user.svg" alt="user" />
-                            </button> -->
+                        <!-- <a role="button" href="./login.html" class="header__button px-2 py-2 mx-2">
+                            <img src="assets/icons/user.svg" alt="user" />
+                        </a> -->
 
-                        <button type="button" class="header__button mx-2 px-1">
+                        <a role="button" href="./publish-trip.html" class="header__button mx-2 px-1 py-1">
                             <img src="assets/icons/add.svg" alt="add a trip" />
-                        </button>
+                        </a>
 
                         <div class="nav-item dropdown" style="border: 0!important;">
                             <a class="nav-link header__button px-2 mx-2" href="#" role="button" id="dropdownMenuLink"
@@ -108,53 +104,85 @@
         </div>
     </header>
 
-    <div class="container trip-published-container mt-6">
-        <div class="stepper col-8 m-4">
-            <div class="progress" style="height: 1px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                    aria-valuemax="100"></div>
+    <div class="content__line mt-7">
+        <a class="ms-5 dn" href="test.html">
+            <div class="box__back dn">
+                <img src="assets/icons/arrow_left.svg" width="30" height="17" alt="">
+                <p class="ms-3 me-3 fs-5">Назад</p>
             </div>
-            <div class="progress-icon">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5"
-                        stroke-width="2" />
-                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
-                        fill="#0057B8" fill-opacity="0.5" />
-                </svg>
-                <span>Створення</span>
+        </a>
+
+        <a class="me-5 dn" href="index.html">
+            <div class="box__back dn">
+                <p class="me-3 ms-3 fs-5">Головна</p>
+                <img src="assets/icons/arrow_right.svg" width="30" height="17" alt="">
             </div>
-            <div class="progress-icon">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#0057B8" stroke-opacity="0.5"
-                        stroke-width="2" />
-                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
-                        fill="#0057B8" fill-opacity="0.5" />
-                </svg>
-                <span>Деталі</span>
-            </div>
-            <div class="progress-icon active-progress-icon">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="32" height="32" rx="16" stroke="#000" stroke-opacity="0.5"
-                        stroke-width="2" />
-                    <path d="M21.413 13L23 14.5852L15.5766 22L11 17.4289L12.5869 15.8437L15.5766 18.8298L21.413 13Z"
-                        fill="#000" fill-opacity="0.5" />
-                </svg>
-                <span>Завершення</span>
+        </a>
+    </div>
+
+    <div class="container__min">
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                    <div class="box_time mb-2">
+                        <img class="rounded-circle" src="assets/img/avatar.png" alt="">
+                    </div>
+                    <div class="name fs-5">
+                        <p>Володимир Іванович Шевченко</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="col-10 container driver-backgorund-container">
-            <div class="driver-backgorund">
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Номер:</p>
+                    </div>
+                    <div class="fs-5">
+                        <p>+ 38 (050) 739-85-54</p>
+                    </div>
+                </div>
             </div>
-            <div class="trip-published-form">
-                <h1>Поїздка опублікована</h1>
-                <a class="btn btn-primary me-md-2 nav-btns" type="button">
-                    <span>Повернутись на головну</span>
-                </a>
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Пошта:</p>
+                    </div>
+                    <div class="fs-5">
+                        <p>name@mail.ua</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Автомобіль:</p>
+                    </div>
+                    <div class="fs-5">
+                        <p>RENAULT LOGAN Cиній</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 mx-2">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="box_gray fs-4">
+                        <p>Коментар:</p>
+                    </div>
+                    <div class="fs-5 w-75 text-end">
+                        <p>багажник великий, влізуть речі і тварини, перевагу надам жінкам з дітьми</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="footer bg_blue py-3">
+    <footer class="footer bg_blue py-3 mt-5">
         <div class="container">
             <div class="row">
                 <div
